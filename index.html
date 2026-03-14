@@ -3,7 +3,7 @@
 
 <head>
 
-<title>Gayatri Kishore Kumar | Portfolio</title>
+<title>Kishore Kumar Gayatri | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -14,6 +14,7 @@
 body{
 font-family:'Poppins',sans-serif;
 margin:0;
+scroll-behavior:smooth;
 background:linear-gradient(135deg,#eef2ff,#f8fafc,#e0f2fe);
 background-size:300% 300%;
 animation:bgFlow 12s ease infinite;
@@ -25,11 +26,35 @@ animation:bgFlow 12s ease infinite;
 100%{background-position:0% 50%;}
 }
 
+/* NAVBAR */
+
+.navbar{
+position:sticky;
+top:0;
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+z-index:100;
+}
+
+.navbar a{
+margin:0 15px;
+font-size:14px;
+font-weight:600;
+color:#2563eb;
+text-decoration:none;
+}
+
+.navbar a:hover{
+color:#1e40af;
+}
+
 /* MAIN CONTAINER */
 
 .container{
 width:850px;
-margin:60px auto;
+margin:50px auto;
 background:white;
 padding:50px;
 border-radius:14px;
@@ -83,11 +108,12 @@ a:hover{
 color:#1e40af;
 }
 
-/* RESUME BUTTON */
-.resume-btn{
+/* BUTTON */
+
+.btn{
 display:inline-block;
-margin-top:15px;
-padding:12px 24px;
+margin-top:12px;
+padding:10px 18px;
 background:#2563eb;
 color:white;
 border-radius:8px;
@@ -97,12 +123,12 @@ text-decoration:none;
 font-weight:500;
 }
 
-.resume-btn:hover{
+.btn:hover{
 transform:translateY(-3px) scale(1.05);
 background:#1e40af;
 box-shadow:0 10px 20px rgba(0,0,0,0.15);
-color:white;
 }
+
 /* SECTIONS */
 
 .section{
@@ -159,7 +185,7 @@ font-size:13px;
 /* PROJECT CARD */
 
 .project{
-margin-top:10px;
+margin-top:15px;
 padding:15px;
 background:white;
 border-radius:8px;
@@ -187,7 +213,20 @@ color:#777;
 
 <body>
 
+<!-- NAVIGATION -->
+
+<nav class="navbar">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+
+
 <div class="container">
+
+<!-- HEADER -->
 
 <div class="header">
 
@@ -203,57 +242,62 @@ Visakhapatnam, India • ✉ gayatriprasanna5@gmail.com
 
 <p class="contact">
 <a href="https://github.com/Gayatri-kishore">GitHub</a> |
-<a href="https://www.linkedin.com/">LinkedIn</a>
+<a href="https://linkedin.com/in/gayatrikishorekumar">LinkedIn</a>
 </p>
 
-<a class="resume-btn" href="Kishore Kumar Gayatri-Resume.pdf" target="_blank">
+<a class="btn" href="Kishore Kumar Gayatri-Resume.pdf" target="_blank">
 Download Resume
 </a>
 
 </div>
 
 
-<div class="section">
+<!-- ABOUT -->
 
-<h2>About Me</h2>
+<div class="section" id="about">
+
+<h2>Professional Summary</h2>
 
 <p>
-I am a second-year Information Technology student with a strong
-interest in programming and software development. I enjoy building
-practical projects that improve my coding skills and help solve
-real-world problems. Currently, I am focusing on strengthening my
-knowledge in Python, C, Java, and web technologies while continuously
-learning new concepts in software development.
+Information Technology undergraduate with a strong interest in
+software development and programming. Possess foundational
+knowledge in Python, C, and Java with hands-on experience
+building automation tools and GUI-based applications.
+Passionate about developing practical software solutions
+while continuously strengthening problem-solving and
+programming skills.
 </p>
 
 </div>
 
 
-<div class="section">
+<!-- SKILLS -->
+
+<div class="section" id="skills">
 
 <h2>Technical Skills</h2>
 
-<p>
-I have foundational knowledge in multiple programming languages and
-continuously improve my skills through academic projects and practice.
-</p>
-
 <div class="skills">
 
-<div class="skill">Python (Basic)</div>
-<div class="skill">C Programming (Basic)</div>
-<div class="skill">Java (Basic)</div>
+<div class="skill">Python</div>
+<div class="skill">C</div>
+<div class="skill">Java</div>
 <div class="skill">HTML</div>
 <div class="skill">CSS</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">Automation</div>
+<div class="skill">File Handling</div>
 <div class="skill">Problem Solving</div>
-<div class="skill">Basic Data Structures</div>
 
 </div>
 
 </div>
 
 
-<div class="section">
+<!-- PROJECTS -->
+
+<div class="section" id="projects">
 
 <h2>Projects</h2>
 
@@ -262,20 +306,50 @@ continuously improve my skills through academic projects and practice.
 <strong>Smart File Organizer – Python Automation Tool</strong>
 
 <p>
-Developed a Python-based automation tool that automatically sorts
-files into folders based on their file extensions. The program scans
-a directory and organizes files such as documents, images, and videos
-into categorized folders to maintain a clean workspace.
+Developed a Python program that automatically organizes
+files into folders based on their extensions. The tool
+scans directories and categorizes documents, images,
+and videos to maintain a clean workspace.
 </p>
+
+<a class="btn" href="https://github.com/Gayatri-kishore/smart-file-organizer">
+View Project
+</a>
+
+</div>
+
+
+<div class="project">
+
+<strong>Scientific Calculator – Python GUI Application</strong>
 
 <p>
-This project demonstrates Python file handling, automation concepts,
-and logical problem solving to improve productivity and file
-management efficiency.
+Built a scientific calculator using Python with a
+graphical user interface capable of performing
+arithmetic and scientific calculations including
+trigonometric and logarithmic functions.
 </p>
 
-<a href="https://github.com/Gayatri-kishore">
-View Project on GitHub
+<a class="btn" href="https://github.com/Gayatri-kishore/scientific-calculator">
+View Project
+</a>
+
+</div>
+
+
+<div class="project">
+
+<strong>Personal Portfolio Website</strong>
+
+<p>
+Designed and developed a responsive personal
+portfolio website using HTML and CSS to showcase
+projects, skills, and resume. Deployed using
+GitHub Pages.
+</p>
+
+<a class="btn" href="https://gayatri-kishore.github.io/portfolio-website">
+View Website
 </a>
 
 </div>
@@ -283,7 +357,9 @@ View Project on GitHub
 </div>
 
 
-<div class="section">
+<!-- EDUCATION -->
+
+<div class="section" id="education">
 
 <h2>Education</h2>
 
@@ -302,14 +378,48 @@ MPC – 83.5%<br>
 </div>
 
 
+<!-- CERTIFICATIONS -->
+
 <div class="section">
 
-<h2>Certifications</h2>
+<h2>Certification</h2>
 
-<p>NPTEL Certification – In Progress (Expected April)</p>
+<p>
+NPTEL – Data Analytics with Python<br>
+Certification Exam Scheduled – April 2026
+</p>
 
 </div>
 
+
+<!-- CONTACT -->
+
+<div class="section" id="contact">
+
+<h2>Contact</h2>
+
+<p>If you'd like to collaborate or discuss opportunities, feel free to reach out.</p>
+
+<p>Email: gayatriprasanna5@gmail.com</p>
+
+<p>
+LinkedIn:
+<a href="https://linkedin.com/in/gayatrikishorekumar">
+linkedin.com/in/gayatrikishorekumar
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/Gayatri-kishore">
+github.com/Gayatri-kishore
+</a>
+</p>
+
+</div>
+
+
+<!-- FOOTER -->
 
 <div class="footer">
 
