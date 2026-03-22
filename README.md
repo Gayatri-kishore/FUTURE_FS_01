@@ -15,7 +15,7 @@ Technologies Used
 - JavaScript (basic)
 
 Live Website
-https://gayatri-kishore.github.io/portfolio-website
+https://gayatri-kishore.github.io/FUTURE_FS_01/
 
 GitHub Repository
 https://github.com/Gayatri-kishore/FUTURE_FS_01
